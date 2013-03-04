@@ -1,0 +1,8 @@
+ <com.example.imusicplayer.entity.lrc.LyricView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/audio_lrc"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@null" 
+        android:paddingBottom="15dp"
+        android:paddingTop="10dp"
+        />

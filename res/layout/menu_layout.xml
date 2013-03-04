@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent" 
+	    android:layout_height="match_parent"
+	   android:orientation="vertical"
+	   android:visibility="gone">
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1.0"
+	    >
+	    </LinearLayout>
+<TableLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:background="@drawable/menulayout_bg"
+    android:paddingBottom="45dp"
+    android:layout_marginBottom="8dp"
+    android:paddingTop="10dp">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginBottom="5dp">
+
+        <LinearLayout
+            android:id="@+id/menu_refresh_lib"
+            android:background="@drawable/selector_grid_item_bg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical"
+            android:clickable="true" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                android:src="@drawable/menu_icon_refresh_lib" />
+            <TextView 
+                 android:textColor="#FF129DD0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="刷新歌曲"/>
+        </LinearLayout>
+        <LinearLayout
+                android:id="@+id/menu_set"
+            android:background="@drawable/selector_grid_item_bg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                android:src="@drawable/menu_icon_set" />
+          <TextView
+         	    android:textColor="#FF129DD0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="设置"/>
+        </LinearLayout>
+        <LinearLayout
+                    android:id="@+id/menu_skin"
+            android:background="@drawable/selector_grid_item_bg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                android:src="@drawable/menu_icon_skin" />
+         <TextView
+         	    android:textColor="#FF129DD0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="换肤"/>
+        </LinearLayout>
+        <LinearLayout
+                   android:id="@+id/menu_sleep"
+            android:background="@drawable/selector_grid_item_bg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                android:src="@drawable/menu_icon_sleep" />
+        <TextView 
+         	    android:textColor="#FF129DD0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="睡眠"/>
+        </LinearLayout>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/menu_down"
+            android:background="@drawable/selector_grid_item_bg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                android:src="@drawable/menu_icon_download" />
+            <TextView 
+         	    android:textColor="#FF129DD0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="下载管理"/>
+        </LinearLayout>
+        <LinearLayout
+                android:id="@+id/menu_effect"
+            android:background="@drawable/selector_grid_item_bg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                android:src="@drawable/menu_icon_effect" />
+        <TextView
+         	    android:textColor="#FF129DD0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="音效"/>
+        </LinearLayout>
+        <LinearLayout
+                    android:id="@+id/menu_about"
+            android:background="@drawable/selector_grid_item_bg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                android:src="@drawable/menu_icon_about" />
+           <TextView 
+         	    android:textColor="#FF129DD0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="关于"/>
+        </LinearLayout>
+        <LinearLayout
+                  android:id="@+id/menu_exit"
+               android:background="@drawable/selector_grid_item_bg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                android:src="@drawable/menu_icon_exit" />
+          <TextView
+         	    android:textColor="#FF129DD0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="退出"/>
+        </LinearLayout>
+    </TableRow>
+</TableLayout>
+</LinearLayout>

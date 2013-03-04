@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="menu_settings">Settings</string>
+    <string name="app_name">且听风吟</string>
+     <string name="title_activity_main">Justing</string>
+	<string name="sleep_mode_default">1</string>
+	<string name="screen_light_default">1</string>
+	<string name="down_load_default">2</string>
+	<string name="default_title_name">欢迎加入且听风吟音乐</string>
+ 	<string name="about_content1">
+	该软件为免费软件,不对用户
+ 	</string>  
+ 	<string name="about_content2">
+	收取任何费用,敬请放心！
+ 	</string>  
+    <string name="check">
+	版本更新请关注：
+	</string>
+	<string name="weibo">
+	 微博:@Chilly_Song
+	</string>
+	<string name="qq">
+	QQ:780834790</string>
+	<string name="twitter">
+	    Twitter:@Chilly Song
+	</string>
+	<string name="email">
+	    E-mail:songzhiyong1121@gmail.com
+	</string>
+	<string name="intellectualProperty1">
+	   版权归作者本人所有，违者必究.
+	</string>
+	<string name="intellectualProperty2">
+	    Copyright ©2012-2015 Justing All Rights Reserved
+	</string>
+</resources>

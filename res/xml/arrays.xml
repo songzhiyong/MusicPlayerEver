@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sleep_mode_entries">
+        <item >退出</item>
+        <item >退出并进入飞行模式</item>
+    </string-array>
+	<string-array name="sleep_mode_entry_values">
+	    <item >1</item>
+	    <item >2</item>
+	</string-array>
+	
+	    <string-array name="screen_light_entries">
+	        <item >系统默认</item>
+	        <item >所有界面常亮</item>
+	        <item >仅播放界面常亮</item>
+	    </string-array>
+	    <string-array name="screen_light_entry_values">
+	        <item >1</item>
+	        <item >2</item>
+	        <item >3</item>
+	    </string-array>
+	   <string-array name="download_entries">
+	       <item >禁止下载</item>
+	       <item >始终下载</item>
+	       <item >使用WI-Fi时下载</item>
+	   </string-array> 
+	<string-array name="download_entry_values">
+	    <item >1</item>
+	    <item >2</item>
+	    <item >3</item>
+	</string-array>
+</resources>

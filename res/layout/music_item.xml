@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="50dp"
+    android:background="@drawable/listview_head"
+    android:padding="5dp" >
+    <ImageView
+        android:id="@+id/ivAlbum"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon" />
+
+    <TableLayout
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_weight="1.0"
+        android:descendantFocusability="blocksDescendants"
+        android:stretchColumns="0,1" >
+
+        <TableRow
+            android:layout_height="0dp"
+            android:layout_weight="1.0" >
+
+            <TextView
+                android:id="@+id/tvMusicName"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="歌曲名称"
+                 android:textColor="#FF129DD0"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSinger"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="歌手名"
+                android:textColor="#FF129DD0"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_height="0dp"
+            android:layout_weight="1.0" >
+
+            <TextView
+                android:id="@+id/tvAlbumName"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="专辑名"
+                android:textColor="#88129DD0"/>
+
+            <TextView
+                android:id="@+id/tvDuration"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1.0"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="时长"
+              android:textColor="#CC129DD0"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+
+    <!-- <ImageView
+        android:id="@+id/list_item_play"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:clickable="true"
+        android:background="@drawable/selector_list_item_play_btn" /> -->
+
+    <ImageView
+        android:id="@+id/list_item_fav_or_download"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:clickable="true"
+        android:background="@drawable/btn_not_love" />
+
+</LinearLayout>

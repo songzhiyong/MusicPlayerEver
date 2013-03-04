@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">且听风吟</string>
+	<string name="sleep_mode_default">1</string>
+	<string name="screen_light_default">1</string>
+	<string name="down_load_default">2</string>
+	<string name="default_title_name">欢迎加入且听风吟音乐</string>
+    
+    
+    
+    
+ 	<string name="about_title_name">关于Justing AirSong音乐</string>
+ 	
+ 	<string name="about_content">
+	Justing AirSong音乐for Android\n
+	版本号:Justing AirSong 1.0\n\n
+	温馨提示\n
+	Justing AirSong音乐为免费软件,不对用户收取任何费用,敬请放心.\n\n
+	知识产权声明\n
+	Justing AirSong音乐作者QQ:780834790\n
+	Justing AirSong音乐客服QQ:暂无\n
+	Justing AirSong音乐网站:还未开放\n
+	Justing AirSong音乐微博:还未开通\n
+ 	</string>  
+    
+</resources>

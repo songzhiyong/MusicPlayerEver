@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_blur"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/aboutlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/slidercontent_bg"
+        android:orientation="vertical" >
+		<LinearLayout android:layout_width="match_parent"
+		    android:layout_height="0dp"
+		    android:layout_weight="1.0"
+		    android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/handlelayout_bg"
+            android:gravity="center_vertical"
+            android:text="版本信息"
+            android:textColor="#FF129DD0"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvAppInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Justing Music  v1.0"
+            android:textColor="#FFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvAppInfo1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/about_content1"
+            android:textColor="#FFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvAppInfo2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/about_content2"
+            android:textColor="#FFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/check"
+           android:textColor="#FF129DD0"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/weibo"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/weibo"
+            android:textColor="#FFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/twitter"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/twitter"
+            android:textColor="#FFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/qq"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/qq"
+            android:textColor="#FFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/email"
+            android:textColor="#FFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/copyright1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/intellectualProperty1"
+            android:textColor="#FFF"
+            android:textSize="16sp" />
+        </LinearLayout>
+       <TextView
+            android:id="@+id/copyright2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/intellectualProperty2"
+           android:textColor="#FF129DD0"
+            android:textSize="16sp" />
+    </LinearLayout>
+    
+ 
+</LinearLayout>

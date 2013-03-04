@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_music_girl" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:background="@drawable/slidercontent_bg"
+        android:orientation="vertical">
+
+	     <LinearLayout 
+		android:id="@+id/progressLayout" 
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:gravity="center_vertical"
+	    android:layout_alignParentBottom="true"
+		android:background="@drawable/progresslayout_bg"
+		android:orientation="vertical">
+	
+		<LinearLayout android:layout_width="fill_parent"
+		    android:layout_height="wrap_content">
+	    	<TextView 
+		    android:text="00:00" 
+		    android:id="@+id/tvCurTime" 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+	    	android:layout_marginRight="10dp"
+	        android:textColor="#FF129DD0"
+	    	android:textStyle="bold"
+		 >
+		    </TextView>
+		    <TextView android:id="@+id/tvPlaySong"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		      	 android:textColor="#FF129DD0"
+		     	  android:ellipsize="marquee"
+			    android:textSize="12sp"
+		        android:singleLine="true"
+		        android:focusable="true" 
+		        android:focusableInTouchMode="true"
+		        android:layout_weight="1.0"/>
+		    <TextView 
+		    android:text="00:00" 
+		    android:id="@+id/tvTotalTime" 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+			 android:textColor="#FF129DD0"
+			android:textStyle="bold"
+		 >
+		    </TextView>
+		    </LinearLayout>
+		    <LinearLayout android:layout_width="fill_parent"
+		        android:layout_height="wrap_content">
+
+		        <SeekBar
+		            android:id="@+id/seekBar"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:paddingLeft="5dp"
+		            pa="5dp"
+		            android:background="@drawable/progress_buffering"
+		            android:max="100"
+		            android:progressDrawable="@drawable/seekbar_style"
+		            android:thumb="@drawable/seekbar_thumb" />
+	   		</LinearLayout>
+		</LinearLayout>
+
+	     <RelativeLayout
+	         android:id="@+id/setlayout"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:layout_alignParentLeft="true"
+	         android:layout_alignParentTop="true" >
+
+	         <ImageButton
+	             android:id="@+id/buttonMode"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:layout_gravity="left|top"
+	             android:background="@drawable/selector_mode_set"
+	             android:onClick="doClick"
+	             android:src="@drawable/mode_list_loop" />
+
+	         <ImageButton
+	             android:id="@+id/buttonVolumn"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:layout_alignParentRight="true"
+	             android:background="@drawable/selector_volum_set"
+	             android:onClick="doClick"
+	             android:src="@drawable/voice" />
+	     </RelativeLayout>
+               <android.support.v4.view.ViewPager
+	        android:id="@+id/vpager"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_below="@id/setlayout"
+	        android:layout_above="@id/progressLayout"
+	        android:background="#00FF0000" >
+	    </android.support.v4.view.ViewPager>
+    </RelativeLayout>
+   	<LinearLayout
+	    android:id="@+id/miniplayLayout" 
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	   	android:background="@drawable/playcontrol_bg"
+	    android:gravity="center">		
+	        		    
+	        <ImageButton 
+	        android:id="@+id/buttonPlayPre" 
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1.0"
+	        android:src="@drawable/player_pre"
+	        android:background="@drawable/selector_music_btn"
+	        android:onClick="doClick">
+	        </ImageButton>
+	        
+	        <ImageButton 
+	        android:id="@+id/buttonPlay" 
+	        android:layout_width="0dp" 
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:src="@drawable/player_play"
+	        android:background="@drawable/selector_music_btn"
+	        android:onClick="doClick">
+	        </ImageButton>
+	         <ImageButton 
+	        android:id="@+id/buttonPlayNext" 
+	        android:layout_width="0dp" 
+	        android:layout_height="wrap_content"
+	    	android:layout_weight="1"
+	        android:src="@drawable/player_next"
+	        android:background="@drawable/selector_music_btn"
+	        android:onClick="doClick">
+	        </ImageButton>
+	    </LinearLayout>
+
+</LinearLayout>

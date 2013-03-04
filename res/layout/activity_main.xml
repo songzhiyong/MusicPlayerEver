@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@null">
+
+    <FrameLayout
+        android:id="@+id/localMusics"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@null" >
+        <ListView
+            android:id="@+id/lvMusics"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingTop="50dp"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/divider_color"
+            android:dividerHeight="1dp"
+            android:listSelector="@drawable/selector_list_item"
+            android:scrollbars="none"
+            android:background="@drawable/bg_digit_flower"
+            android:visibility="gone" >
+        </ListView>
+        <GridView
+            android:id="@+id/gvLocalMusics"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/slidercontent_bg"
+            android:columnWidth="64dp"
+            android:horizontalSpacing="10dp"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp" >
+        </GridView>
+         <TextView 
+             android:id="@+id/tvListTypeTitile"
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:background="@drawable/handlelayout_bg"
+	    android:text="列表类型"
+	    android:gravity="center"
+	    android:textSize="20sp"
+	   android:textColor="#FF129DD0"
+	    android:visibility="gone"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:orientation="vertical" >
+
+        <SlidingDrawer
+            android:id="@+id/sddrawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:allowSingleTap="false"
+            android:background="#00000000"
+            android:content="@+id/content"
+            android:handle="@+id/handle"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@id/handle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <include layout="@layout/sliderdrawer_handle_layout" >
+                </include>
+            </LinearLayout>
+
+            <include
+                android:id="@id/content"
+                layout="@layout/play_layout" />
+        </SlidingDrawer>
+    </LinearLayout>
+    <include
+        android:id="@+id/menu_layout"
+         layout="@layout/menu_layout"
+        android:layout_marginBottom="0dp"
+        />
+</FrameLayout>
